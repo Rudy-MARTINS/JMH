@@ -1,0 +1,117 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.container {
+    text-align: center;
+    background:#E9E3DC;
+    padding: 40px 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 90%;
+}
+
+.password-container {
+    position: relative;
+    margin: 20px auto;
+    width: 100%;
+}
+
+.password-container input[type="password"],
+.password-container input[type="text"] {
+    width: 100%;
+    padding: 10px 40px 10px 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
+    height: 40px;
+}
+
+.password-container .toggle-visibility {
+    position: absolute;
+    top: -15px; /* Ajustement pour remonter le bouton d'œil */
+    right: 10px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    color: #007bff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+    width: 30px;
+}
+
+
+button {
+    margin-top: 20px;
+    padding: 12px 25px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.feedback {
+    margin-top: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+#jeanmichel {
+    margin: 20px auto;
+    text-align: center;
+}
+
+#jeanmichel img {
+    max-width: 100px;
+    height: auto;
+}
+.modal {
+    display: none; /* Masque la modal par défaut */
+    position: fixed; /* Positionne la modal par rapport à la fenêtre */
+    top: 50%; /* Centre verticalement */
+    left: 50%; /* Centre horizontalement */
+    transform: translate(-50%, -50%); /* Ajuste pour centrer parfaitement */
+    z-index: 1000; /* S'assure que la modal est au-dessus de tout */
+    background-color: white; /* Fond de la modal */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+    width: 80%; /* Largeur par défaut */
+    max-width: 400px; /* Limite la largeur maximale */
+}
+
+.modal-content {
+    text-align: center; /* Centre le contenu dans la modal */
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 20px;
+    cursor: pointer;
+    color: #333;
+    font-weight: bold;
+}
+
+.close:hover {
+    color: red;
+}
